@@ -11,6 +11,8 @@ const ItemModal = () => {
   const onSubmit = (e) => {
     console.log("fired");
     e.preventDefault();
+    console.log(e.target);
+    e.target.item.value = "";
     const newItem = {
       name: name,
     };
